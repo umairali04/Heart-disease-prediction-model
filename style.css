@@ -1,0 +1,134 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #e3f2fd, #bbdefb);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 40px;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1400px;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.instructions {
+  flex: 1 1 350px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.instructions table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.instructions th,
+.instructions td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.instructions th {
+  background-color: #1976d2;
+  color: white;
+}
+
+.container {
+  flex: 1 1 450px;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #1976d2;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1 1 calc(33.333% - 20px);
+  min-width: 150px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.2s;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border-color: #1976d2;
+  box-shadow: 0 0 5px rgba(25, 118, 210, 0.3);
+}
+
+.form-actions {
+  flex: 1 1 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+button {
+  padding: 12px 30px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #0d47a1;
+}
+
+#result {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .form-group {
+    flex: 1 1 calc(50% - 20px); /* 2 per row on tablets */
+  }
+}
+
+@media (max-width: 600px) {
+  .main {
+    flex-direction: column;
+  }
+  .form-group {
+    flex: 1 1 100%; /* 1 per row on mobile */
+  }
+}
+
