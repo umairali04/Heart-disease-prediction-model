@@ -2,6 +2,7 @@
     <html>
     <head>
     <title>Heart Disease Predictor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -9,81 +10,81 @@
         <div class="instructions">
             <h2>Field Instructions</h2>
             <table border="1" cellpadding="8" cellspacing="0">
-        <thead>
-            <tr>
-                <th>Column</th>
-                <th>Meaning</th>
-                <th>Values / Possible Codes</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>age</td>
-                <td>Age of the person (in years)</td>
-                <td>Any integer (e.g., 29, 54)</td>
-            </tr>
-            <tr>
-                <td>Gender</td>
-                <td>Biological sex of the person</td>
-                <td>0 = female, 1 = male</td>
-            </tr>
-            <tr>
-                <td>cp</td>
-                <td>Chest pain type</td>
-                <td>0 = typical angina, 1 = atypical angina, 2 = non-anginal pain, 3 = asymptomatic</td>
-            </tr>
-            <tr>
-                <td>trestbps</td>
-                <td>Resting blood pressure (mm Hg)</td>
-                <td>Integer (e.g., 120, 140)</td>
-            </tr>
-            <tr>
-                <td>chol</td>
-                <td>Serum cholesterol (mg/dl)</td>
-                <td>Integer (e.g., 200, 250)</td>
-            </tr>
-            <tr>
-                <td>fbs</td>
-                <td>Fasting blood sugar &gt; 120 mg/dl</td>
-                <td>1 = true, 0 = false</td>
-            </tr>
-            <tr>
-                <td>restecg</td>
-                <td>Resting electrocardiographic results</td>
-                <td>0 = normal, 1 = ST-T abnormality, 2 = left ventricular hypertrophy</td>
-            </tr>
-            <tr>
-                <td>thalach</td>
-                <td>Maximum heart rate achieved</td>
-                <td>Integer (e.g., 150, 172)</td>
-            </tr>
-            <tr>
-                <td>exang</td>
-                <td>Exercise-induced angina</td>
-                <td>1 = yes, 0 = no</td>
-            </tr>
-            <tr>
-                <td>oldpeak</td>
-                <td>ST depression induced by exercise relative to rest</td>
-                <td>Float (e.g., 1.4, 2.6)</td>
-            </tr>
-            <tr>
-                <td>slope</td>
-                <td>Slope of the peak exercise ST segment</td>
-                <td>0 = upsloping, 1 = flat, 2 = downsloping</td>
-            </tr>
-            <tr>
-                <td>ca</td>
-                <td>Number of major vessels (0–3) colored by fluoroscopy</td>
-                <td>Integer: 0 to 3</td>
-            </tr>
-            <tr>
-                <td>thal</td>
-                <td>Thalassemia test result</td>
-                <td>1 = normal, 2 = fixed defect, 3 = reversible defect</td>
-            </tr>
-        </tbody>
-    </table>
+                <thead>
+                    <tr>
+                        <th>Column</th>
+                        <th>Meaning</th>
+                        <th>Values / Possible Codes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>age</td>
+                        <td>Age of the person (in years)</td>
+                        <td>Any integer (e.g., 29, 54)</td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td>Biological sex of the person</td>
+                        <td>0 = female, 1 = male</td>
+                    </tr>
+                    <tr>
+                        <td>cp</td>
+                        <td>Chest pain type</td>
+                        <td>0 = typical angina, 1 = atypical angina, 2 = non-anginal pain, 3 = asymptomatic</td>
+                    </tr>
+                    <tr>
+                        <td>trestbps</td>
+                        <td>Resting blood pressure (mm Hg)</td>
+                        <td>Integer (e.g., 120, 140)</td>
+                    </tr>
+                    <tr>
+                        <td>chol</td>
+                        <td>Serum cholesterol (mg/dl)</td>
+                        <td>Integer (e.g., 200, 250)</td>
+                    </tr>
+                    <tr>
+                        <td>fbs</td>
+                        <td>Fasting blood sugar &gt; 120 mg/dl</td>
+                        <td>1 = true, 0 = false</td>
+                    </tr>
+                    <tr>
+                        <td>restecg</td>
+                        <td>Resting electrocardiographic results</td>
+                        <td>0 = normal, 1 = ST-T abnormality, 2 = left ventricular hypertrophy</td>
+                    </tr>
+                    <tr>
+                        <td>thalach</td>
+                        <td>Maximum heart rate achieved</td>
+                        <td>Integer (e.g., 150, 172)</td>
+                    </tr>
+                    <tr>
+                        <td>exang</td>
+                        <td>Exercise-induced angina</td>
+                        <td>1 = yes, 0 = no</td>
+                    </tr>
+                    <tr>
+                        <td>oldpeak</td>
+                        <td>ST depression induced by exercise relative to rest</td>
+                        <td>Float (e.g., 1.4, 2.6)</td>
+                    </tr>
+                    <tr>
+                        <td>slope</td>
+                        <td>Slope of the peak exercise ST segment</td>
+                        <td>0 = upsloping, 1 = flat, 2 = downsloping</td>
+                    </tr>
+                    <tr>
+                        <td>ca</td>
+                        <td>Number of major vessels (0–3) colored by fluoroscopy</td>
+                        <td>Integer: 0 to 3</td>
+                    </tr>
+                    <tr>
+                        <td>thal</td>
+                        <td>Thalassemia test result</td>
+                        <td>1 = normal, 2 = fixed defect, 3 = reversible defect</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     <div class="container">
         <h2>Heart Disease Prediction</h2>
@@ -150,7 +151,7 @@
         </div>
 
         <div class="form-group">
-            <label>Thal:</label>
+            <label>Thalassemia test result:</label>
             <input type="number" name="thal" required>
         </div>
 
