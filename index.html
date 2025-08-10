@@ -188,10 +188,10 @@
             const result = await res.json();
 
             if (result.prediction === 1) {
-            resultDisplay.innerText = "⚠️ Heart Disease Detected";
+            resultDisplay.innerText = "Heart Disease Detected";
             resultDisplay.style.color = "red";
             } else {
-            resultDisplay.innerText = "✅ No Heart Disease";
+            resultDisplay.innerText = "No Heart Disease";
             resultDisplay.style.color = "green";
             }
         } catch (error) {
